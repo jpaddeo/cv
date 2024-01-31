@@ -1,0 +1,65 @@
+---
+import Mail from '@/components/icons/Mail.astro';
+import Phone from '@/components/icons/Phone.astro';
+import GitHub from '@/components/icons/GitHub.astro';
+import LinkedIn from '@/components/icons/LinkedIn.astro';
+import X from '@/components/icons/X.astro';
+
+const { network, username, url } = Astro.props;
+const linkClass =
+  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-slate-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-slate-50 hover:bg-slate-200 hover:text-slate-900 size-8';
+---
+
+{
+  network === 'Mail' && (
+    <a href={url} title={`Send email to ${username}`} class={linkClass}>
+      <Mail />
+    </a>
+  )
+}
+{
+  network === 'Phone' && (
+    <a href={url} title={`Call to ${username}`} class={linkClass}>
+      <Phone />
+    </a>
+  )
+}
+{
+  network === 'GitHub' && (
+    <a
+      href={url}
+      title={`Click to go to ${network} of ${username}`}
+      target='_blank'
+      rel='noopener noreferrer'
+      class={linkClass}
+    >
+      <GitHub />
+    </a>
+  )
+}
+{
+  network === 'LinkedIn' && (
+    <a
+      href={url}
+      title={`Click to go to ${network} of ${username}`}
+      target='_blank'
+      rel='noopener noreferrer'
+      class={linkClass}
+    >
+      <LinkedIn />
+    </a>
+  )
+}
+{
+  network === 'X' && (
+    <a
+      href={url}
+      title={`Click to go to ${network} of ${username}`}
+      target='_blank'
+      rel='noopener noreferrer'
+      class={linkClass}
+    >
+      <X />
+    </a>
+  )
+}

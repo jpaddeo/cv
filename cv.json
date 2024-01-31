@@ -1,0 +1,148 @@
+{
+  "basics": {
+    "name": "Juan Pablo Addeo",
+    "label": "Software Engineer and Full Stack Developer focused on building products that solve real problems",
+    "image": "https://avatars.githubusercontent.com/u/3083587?v=4",
+    "email": "juanpablo.addeo@gmail.com",
+    "phone": "+54 9 1131638755",
+    "url": "https://jpaddeo.work",
+    "summary": "As a Software Engineer and Full Stack Developer, I have successfully taken multiple projects for different technologies. I lead tech teams effectively ensuring the team growth and coersion. Currently I mostly work with JavaScript & TypeScript, React, NextJS, NestJS, Laravel, MySQL & PostgreSQL and other tools (like Tailwind CSS, React Native). I have over 10 years of experience and I'm passionate about learning new tech stacks and looking for new challenges.",
+    "location": {
+      "address": "Avenida de Los Lagos S/N",
+      "postalCode": "1625",
+      "city": "Belén de Escobar",
+      "countryCode": "AR",
+      "region": "Buenos Aires"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "juanpabloaddeo",
+        "url": "https://www.linkedin.com/in/juanpabloaddeo/"
+      },
+      {
+        "network": "X",
+        "username": "jpaddeo",
+        "url": "https://x.com/jpaddeo"
+      },
+      {
+        "network": "GitHub",
+        "username": "jpaddeo",
+        "url": "https://github.com/jpaddeo"
+      },
+      {
+        "network": "Mail",
+        "username": "juanpablo.addeo@gmail.com",
+        "url": "mailto:juanpablo.addeo@gmail.com"
+      },
+      {
+        "network": "Phone",
+        "username": "+5491131638755",
+        "url": "tel:+5491131638755"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "IBM",
+      "position": "Lotus Domino Application Developer",
+      "url": "https://www.ibm.com/",
+      "startDate": "2008",
+      "endDate": "2009",
+      "summary": "Develop and give maintenance of IBM Lotus Domino applications for HR LATAM. Give development and help desk support to multiples customers.",
+      "highlights": ["on behalf of consultant"]
+    },
+    {
+      "name": "NSX S.A.",
+      "position": "Junior IT Specialist",
+      "url": "https://www.e-nsx.com/",
+      "startDate": "2007",
+      "endDate": "2008",
+      "summary": "Develop, install and manage IBM Lotus Domino platform. Give development and help desk support to multiples customers.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": ["Awarded 'Volunteer of the Month'"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University",
+      "url": "https://institution.com/",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "score": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": ["Won award at AIHacks 2016"],
+      "url": "https://project.com/"
+    }
+  ]
+}

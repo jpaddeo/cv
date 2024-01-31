@@ -1,0 +1,19 @@
+---
+import SocialLinkItem from '@/components/ui/SocialLinkItem.astro';
+
+interface Profile {
+  network: string;
+  username: string;
+  url: string;
+}
+
+const { profiles } = Astro.props;
+---
+
+<footer class='flex gap-x-1 pt-1 font-mono text-sm text-slate-900 print:hidden'>
+  {
+    profiles.map(({ network, username, url }: Profile) => (
+      <SocialLinkItem network={network} username={username} url={url} />
+    ))
+  }
+</footer>
