@@ -12,9 +12,13 @@ const VisitorComponents = {
   interbanking: Interbanking,
   default: Default,
 };
-const Component = visitor?.value
-  ? VisitorComponents[visitor.value as keyof typeof VisitorComponents]
-  : VisitorComponents.default;
+
+let Component = Fragment;
+if (visitor && visitor.value.length > 0) {
+  Component =
+    VisitorComponents[visitor.value as keyof typeof VisitorComponents] ||
+    Default;
+}
 ---
 
 <Component />
