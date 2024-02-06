@@ -7,13 +7,23 @@ interface Profile {
   url: string;
 }
 
-const { profiles } = Astro.props;
+const { profiles, email, phone } = Astro.props;
 ---
 
-<footer class='flex gap-x-1 pt-1 font-mono text-sm text-slate-900 print:hidden'>
-  {
-    profiles.map(({ network, username, url }: Profile) => (
-      <SocialLinkItem network={network} username={username} url={url} />
-    ))
-  }
-</footer>
+<>
+  <footer
+    class='hidden font-mono text-sm text-slate-500 print:flex print:flex-col print:gap-y-1'
+  >
+    <p>{email}</p>
+    <p>{phone}</p>
+  </footer>
+  <footer
+    class='flex gap-x-1 pt-1 font-mono text-sm text-slate-900 print:hidden'
+  >
+    {
+      profiles.map(({ network, username, url }: Profile) => (
+        <SocialLinkItem network={network} username={username} url={url} />
+      ))
+    }
+  </footer>
+</>

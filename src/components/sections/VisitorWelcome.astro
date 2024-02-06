@@ -1,0 +1,20 @@
+---
+import MercadoLibre from '@/components/sections/visitors/MercadoLibre.astro';
+import Interbanking from '@/components/sections/visitors/Interbanking.astro';
+import Default from '@/components/sections/visitors/Default.astro';
+
+export const prerender = false;
+
+const visitor = Astro.cookies.get('v');
+
+const VisitorComponents = {
+  meli: MercadoLibre,
+  interbanking: Interbanking,
+  default: Default,
+};
+const Component = visitor?.value
+  ? VisitorComponents[visitor.value as keyof typeof VisitorComponents]
+  : VisitorComponents.default;
+---
+
+<Component />

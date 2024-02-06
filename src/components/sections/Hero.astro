@@ -7,7 +7,7 @@ import Worldwide from '@/components/icons/Worldwide.astro';
 
 import { basics } from '@cv';
 
-const { name, label, image, location, profiles } = basics;
+const { name, label, image, location, email, phone, profiles } = basics;
 const { city, region } = location;
 ---
 
@@ -28,7 +28,7 @@ const { city, region } = location;
           <span class='tracking-tighter'>{city}, {region}</span>
         </a>
       </div>
-      <SocialLinks profiles={profiles} />
+      <SocialLinks profiles={profiles} email={email} phone={phone} />
     </div>
     <HeroImage src={image} alt={name} />
   </div>
