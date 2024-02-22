@@ -1,11 +1,32 @@
-import { defineMiddleware } from 'astro:middleware';
+import {type NextRequest} from "next/server";
 
-export const onRequest = defineMiddleware(({  url, cookies }, next) => {
-  const visitor = url.searchParams.get('v');
-  if (visitor) {
-    url.searchParams.delete('v');
-    cookies.set('v', visitor);
-    return Response.redirect(url);
+export const locales = ["es", "en"];
+
+export function middleware(request: NextRequest) {
+  const {pathname, searchParams} = request.nextUrl;
+  let locale = searchParams.get("locale");
+
+  if (!locale || !locales.includes(locale)) {
+    locale = locales[0];
+    const pathnameHasLocale = locales.some(
+      (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
+    );
+
+    if (pathnameHasLocale) return;
+  } else {
+    request.nextUrl.searchParams.delete("locale");
   }
-  return next();
-});
+
+  request.nextUrl.pathname = `/${locale}${pathname.replace(/^\/(es|en)/, "")}`;
+
+  return Response.redirect(request.nextUrl);
+}
+
+export const config = {
+  matcher: [
+    // Skip all internal paths (_next)
+    "/((?!_next).*)",
+    // Optional: only run on root (/) URL
+    // '/'
+  ],
+};
