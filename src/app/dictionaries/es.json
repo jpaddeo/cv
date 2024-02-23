@@ -1,4 +1,7 @@
 {
   "title": "Hola, Soy Juan Pablo",
-  "description": ""
+  "description": "",
+  "labels": {
+    "about": "Acerca de mi"
+  }
 }

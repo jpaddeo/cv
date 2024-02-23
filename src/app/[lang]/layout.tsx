@@ -1,9 +1,6 @@
-import Link from "next/link";
-
-import {getDictionary} from "@/lib/dictionaries";
-
 import "../globals.css";
-import LanguageSwitcher from "@/components/layout/language-switcher";
+import {getDictionary} from "@/lib/dictionaries";
+import LanguageSwitcher from "@/components/language-switcher";
 
 interface RootLayoutParams {
   children: React.ReactNode;
@@ -22,17 +19,13 @@ export async function generateMetadata({params: {lang}}: Exclude<RootLayoutParam
 }
 
 export default async function RootLayout({children, params: {lang}}: RootLayoutParams) {
-  const dictionary = await getDictionary(lang);
-
   return (
     <html lang={lang}>
-      <body className="dark container m-auto grid min-h-screen grid-rows-[auto,1fr,auto] bg-background px-4 font-sans antialiased">
-        <header className="text-xl font-bold leading-[4rem]">
-          <Link href="/">{dictionary.title}</Link>
+      <body>
+        <header>
           <LanguageSwitcher />
         </header>
-        <main className="py-8">{children}</main>
-        <footer className="text-center leading-[4rem] opacity-70" />
+        {children}
       </body>
     </html>
   );
