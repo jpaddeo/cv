@@ -2,6 +2,7 @@ import {getCV} from "@/lib/cv";
 import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
 import Experience from "@/components/sections/experience";
+import Education from "@/components/sections/education";
 
 interface HomePageParams {
   params: {
@@ -11,14 +12,15 @@ interface HomePageParams {
 
 export default async function HomePage({params: {lang}}: HomePageParams) {
   const cv = await getCV(lang);
-  const {basics, work} = cv;
+  const {basics, work, education} = cv;
   const {summary} = basics;
 
   return (
     <main className="'p-4 m-auto w-full">
       <Hero basics={basics} />
       <About lang={lang} summary={summary} />
-      <Experience work={work} />
+      <Experience lang={lang} work={work} />
+      <Education education={education} lang={lang} />
     </main>
   );
 }

@@ -2,6 +2,7 @@
   "title": "Hola, Soy Juan Pablo",
   "description": "",
   "labels": {
-    "about": "Acerca de mi"
+    "about": "Acerca de mi",
+    "experience": "Experiencia"
   }
 }

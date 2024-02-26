@@ -1,4 +1,6 @@
+import {getDictionary} from "@/lib/dictionaries";
 import ExperienceItem from "@/components/ui/experience-item";
+import Section from "@/components/ui/section";
 
 interface Work {
   name: string;
@@ -10,15 +12,19 @@ interface Work {
   endDate?: string;
 }
 interface ExperienceProps {
+  lang: "es" | "en";
   work: Work[];
 }
 
-export default function Experience({work}: ExperienceProps) {
+export default async function Experience({lang, work}: ExperienceProps) {
+  const dictionary = await getDictionary(lang);
+  const {labels} = dictionary;
+
   return (
-    <div className="flex flex-col items-center justify-center gap-y-6">
+    <Section className="flex flex-col gap-y-10" title={labels.experience as string}>
       {work.map((exp: Work) => (
         <ExperienceItem key={exp.name} {...exp} />
       ))}
-    </div>
+    </Section>
   );
 }

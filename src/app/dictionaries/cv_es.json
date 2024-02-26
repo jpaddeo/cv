@@ -51,12 +51,12 @@
       "summary": "Actualmente me desempeño como el Titular del Dpto. de Investigación y Desarrollo Informático (DIyDI) y tengo como tareas principales administrar los proyectos y los recursos del Dpto., de diseñar arquitecturas de software para nuevos proyectos, sistemas legacy e integraciones con otros organismos. Como otras tareas tengo las de administrar servidores correspondientes al Dpto., realizar y coordinar las implementaciones productivas (ortiendándolas principalmente a hacerlas con CI/CD).",
       "highlights": [
         "Administración de recursos y proyectos",
+        "Administración de servidores",
         "Arquitectura de software",
-        "Desarrollo de software (Fullstack)",
-        "Integraciones (microservicios / APIs)",
-        "Implementaciones y administración de servidores",
+        "Capacitación y coaching",
         "CI/CD",
-        "Capacitación y coaching"
+        "Desarrollo de software (Fullstack)",
+        "Integraciones (microservicios / APIs)"
       ]
     },
     {
@@ -66,10 +66,10 @@
       "startDate": "2008",
       "summary": "Realizo tareas de consultoría informática, arquitectura de sofware, desarrollo de software fullstack. Adicionalmente tareas de DevOps e implementaciones.",
       "highlights": [
-        "Consultoría TI",
+        "Adminsitración de servidores",
         "Diseño y desarrollo de software fullstack",
         "Diseño y desarrollo móvil",
-        "Adminsitración de servidores",
+        "Consultoría TI",
         "Integraciones",
         "Sitios web"
       ]
@@ -85,8 +85,8 @@
         "Administración de proyectos",
         "Análisis técnico",
         "Arquitectura de software",
-        "Desarrollo de software",
-        "Capacitación y coaching de recursos IT"
+        "Capacitación y coaching de recursos IT",
+        "Desarrollo de software"
       ]
     },
     {
@@ -144,9 +144,9 @@
       "endDate": "2022",
       "summary": "Realicé la migración del servicio de hosting y del servidor. Desarrollé y coordiné la implementación de nuevo sitio institucional (desarrollo y diseño) con un CMS custom para gestión de contenido, integración con Google Calendar y Leaflet GIS.",
       "highlights": [
+        "Administración de recursos y proyectos",
         "Arquitecto de software",
-        "Desarollo de software",
-        "Administración de recursos y proyectos"
+        "Desarollo de software"
       ]
     }
   ],
