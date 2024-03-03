@@ -153,6 +153,14 @@
   ],
   "education": [
     {
+      "institution": "Universidad del CEMA (UCEMA)",
+      "url": "https://ucema.edu.ar/",
+      "area": "Master of Business Administration",
+      "studyType": "Postgrado",
+      "startDate": "2022",
+      "endDate": "abandoned"
+    },
+    {
       "institution": "Facultad Regional Buenos Aires, Universidad Tecnológica Nacional (UTN)",
       "url": "https://www.frba.utn.edu.ar",
       "area": "Ingeniero en Sistemas de la Información",
@@ -252,8 +260,7 @@
   "publications": [],
   "skills": [
     {
-      "name": "Desarrollador Full Stack",
-      "level": "Senior",
+      "name": "Full Stack Developer",
       "keywords": [
         "JavaScript",
         "ReactJS",
@@ -275,14 +282,13 @@
       ]
     },
     {
-      "name": "Arquitecto de Software",
-      "level": "Senior",
+      "name": "Software Architect",
       "keywords": [
         "Elasticsearch",
         "Kibana",
         "Logstash",
         "Filebeat",
-        "Microservicios / APIs",
+        "Microservices / APIs",
         "API REST",
         "Gateways",
         "Firebase",

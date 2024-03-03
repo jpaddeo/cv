@@ -122,7 +122,7 @@
       "url": "https://www.ibm.com/",
       "startDate": "2008",
       "endDate": "2009",
-      "summary": "Realicé desarrollo y mantención evolutiva de aplicaciones IBM Lotus Domino para HR LATAM.",
+      "summary": "Realicé desarrollo y mantención evolutiva de aplicaciones para la plataforma IBM Lotus Domino para HR LATAM.",
       "highlights": ["Análisis técnico", "Desarrollo de software"]
     },
     {
@@ -131,7 +131,7 @@
       "url": "https://www.e-nsx.com/",
       "startDate": "2007",
       "endDate": "2008",
-      "summary": "Realicé desarrollo, instalación y administración de la plataforma IBM Lotus Domino. Adicionalmente, daba soporte de desarrollo y mesa de ayuda a múltiples clientes.",
+      "summary": "Realicé desarrollo, instalación y administración de aplicaciones para la plataforma IBM Lotus Domino. Adicionalmente, daba soporte de desarrollo y mesa de ayuda a múltiples clientes.",
       "highlights": ["Análisis técnico", "Desarrollo de software", "Soporte a clientes"]
     }
   ],
@@ -152,12 +152,20 @@
   ],
   "education": [
     {
+      "institution": "Universidad del CEMA (UCEMA)",
+      "url": "https://ucema.edu.ar/",
+      "area": "Maestría en Dirección de Empresas",
+      "studyType": "Postgrado",
+      "startDate": "2022",
+      "endDate": "abandonado"
+    },
+    {
       "institution": "Facultad Regional Buenos Aires, Universidad Tecnológica Nacional (UTN)",
       "url": "https://www.frba.utn.edu.ar",
       "area": "Ingeniero en Sistemas de la Información",
       "studyType": "Universitario",
-      "startDate": "2006-01",
-      "endDate": "2018-08",
+      "startDate": "2006",
+      "endDate": "2018",
       "courses": ["SL-210 JAVA Programming", "SL-275 JAVA Programming", "Professional Webmaster"]
     }
   ],
@@ -252,7 +260,6 @@
   "skills": [
     {
       "name": "Desarrollador Full Stack",
-      "level": "Senior",
       "keywords": [
         "JavaScript",
         "ReactJS",
@@ -275,7 +282,6 @@
     },
     {
       "name": "Arquitecto de Software",
-      "level": "Senior",
       "keywords": [
         "Elasticsearch",
         "Kibana",

@@ -21,7 +21,7 @@ export default async function Experience({lang, work}: ExperienceProps) {
   const {labels} = dictionary;
 
   return (
-    <Section className="flex flex-col gap-y-10" title={labels.experience as string}>
+    <Section className="flex flex-col gap-y-10" title={labels.experience}>
       {work.map((exp: Work) => (
         <ExperienceItem key={exp.name} {...exp} />
       ))}

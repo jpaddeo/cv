@@ -3,6 +3,8 @@
   "description": "",
   "labels": {
     "about": "Acerca de mi",
-    "experience": "Experiencia"
+    "experience": "Experiencia",
+    "education": "Educación",
+    "skills": "Habilidades"
   }
 }

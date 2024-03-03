@@ -22,7 +22,7 @@ export default async function Experience({lang, education}: EducationProps) {
   const {labels} = dictionary;
 
   return (
-    <Section className="flex flex-col gap-y-8" title={labels.experience as string}>
+    <Section className="flex flex-col gap-y-8" title={labels.education as string}>
       {education.map((educ: Education) => (
         <EducationItem key={educ.institution} {...educ} />
       ))}
