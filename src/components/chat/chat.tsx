@@ -111,14 +111,7 @@ export function Chat({lang}: ChatProps) {
               />
             </motion.div>
 
-            <Button
-              className={cn(
-                buttonVariants({variant: "ghost", size: "icon"}),
-                "h-9 w-9",
-                "shrink-0 dark:bg-muted dark:text-muted-foreground dark:hover:bg-muted dark:hover:text-white",
-              )}
-              type="submit"
-            >
+            <Button type="submit" variant="outline">
               <SendHorizontal className="text-muted-foreground" size={20} />
             </Button>
           </AnimatePresence>
