@@ -21,12 +21,7 @@ export async function generateMetadata({params: {lang}}: Exclude<RootLayoutParam
 export default async function RootLayout({children, params: {lang}}: RootLayoutParams) {
   return (
     <html lang={lang}>
-      <body>
-        <header>
-          <LanguageSwitcher />
-        </header>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
