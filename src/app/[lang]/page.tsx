@@ -17,7 +17,7 @@ export default async function HomePage({params: {lang}}: HomePageParams) {
   const {summary} = basics;
 
   return (
-    <main className="'p-4 m-auto w-full">
+    <main className="m-auto w-full p-4">
       <Hero basics={basics} />
       <About lang={lang} summary={summary} />
       <Experience lang={lang} work={work} />
