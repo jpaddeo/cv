@@ -4,6 +4,8 @@ import About from "@/components/sections/about";
 import Experience from "@/components/sections/experience";
 import Education from "@/components/sections/education";
 import Skills from "@/components/sections/skills";
+import Projects from "@/components/sections/projects";
+import {type Project} from "@/components/sections/projects";
 
 interface HomePageParams {
   params: {
@@ -13,7 +15,7 @@ interface HomePageParams {
 
 export default async function HomePage({params: {lang}}: HomePageParams) {
   const cv = await getCV(lang);
-  const {basics, work, education, skills} = cv;
+  const {basics, work, education, skills, projects} = cv;
   const {summary} = basics;
 
   return (
@@ -23,6 +25,7 @@ export default async function HomePage({params: {lang}}: HomePageParams) {
       <Experience lang={lang} work={work} />
       <Education education={education} lang={lang} />
       <Skills lang={lang} skills={skills} />
+      <Projects lang={lang} projects={projects as Project[]} />
     </main>
   );
 }
