@@ -12,8 +12,8 @@ interface ProjectCardProps {
 
 export default function ProjectCard({name, description, highlights, url}: ProjectCardProps) {
   return (
-    <Card className="flex flex-col overflow-hidden border border-muted p-3">
-      <CardHeader className="">
+    <Card className="flex flex-col overflow-hidden border border-muted">
+      <CardHeader>
         <div className="space-y-1">
           <CardTitle className="text-base">
             {url ? (
@@ -38,7 +38,7 @@ export default function ProjectCard({name, description, highlights, url}: Projec
         </div>
       </CardHeader>
       <CardContent className="mt-auto flex">
-        <div className="mt-2 flex flex-wrap gap-1">
+        <div className="flex flex-wrap gap-1">
           {highlights.map((highlight) => (
             <Badge key={highlight} className="px-1 py-0 text-[10px]" variant="secondary">
               {highlight}
