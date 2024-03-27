@@ -9,6 +9,7 @@ import IconCopy from "@/components/ui/icons/icon-copy";
 import IconUser from "@/components/ui/icons/icon-user";
 import IconOpenAI from "@/components/ui/icons/icon-open-ai";
 import IconDownload from "@/components/ui/icons/icon-download";
+import ChatBubble from "@/components/ui/icons/chat-bubble";
 
 export {
   GitHub,
@@ -22,4 +23,5 @@ export {
   IconOpenAI,
   IconUser,
   IconDownload,
+  ChatBubble,
 };
