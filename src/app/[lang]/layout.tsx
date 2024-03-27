@@ -1,6 +1,7 @@
 import "../globals.css";
 import {getDictionary} from "@/lib/dictionaries";
 import LanguageSwitcher from "@/components/language-switcher";
+import ChatDialog from "@/components/chat-dialog";
 
 interface RootLayoutParams {
   children: React.ReactNode;
@@ -22,6 +23,7 @@ export default async function RootLayout({children, params: {lang}}: RootLayoutP
   return (
     <html lang={lang}>
       <body>{children}</body>
+      <ChatDialog defaultOpened={false} lang={lang} />
     </html>
   );
 }
